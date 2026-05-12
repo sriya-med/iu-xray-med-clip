@@ -63,7 +63,7 @@ def compute_loss(logits_img, logits_txt, idxs, loss_type):
 
 best_val_loss = float("inf")
 os.makedirs("results", exist_ok=True)
-save_path = f"results/{args.loss}_best.pt"
+save_path = f"results/{args.loss}_bs{args.batch_size}_best.pt"
 
 for epoch in range(args.epochs):
     #train
