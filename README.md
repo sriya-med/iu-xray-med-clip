@@ -158,18 +158,6 @@ python src/eval.py --checkpoint results/baseline_bs32_best.pt \
 
 This reports both standard Recall@K (exact-match) and Semantic Recall@K (MeSH label overlap) for image-to-text and text-to-image retrieval.
 
-To evaluate all checkpoints at once:
-
-```bash
-for loss in baseline masked soft; do
-  for bs in 32 64; do
-    python src/eval.py \
-      --checkpoint results/${loss}_bs${bs}_best.pt \
-      --out results/${loss}_bs${bs}_metrics.json
-  done
-done
-```
-
 ---
 
 ## Results
