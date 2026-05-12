@@ -20,7 +20,7 @@ for fname in sorted(os.listdir(REPORTS_DIR)):
     report_id = uid_el.get("id") if uid_el is not None else fname.replace(".xml", "")
 
     #text fields: findings and impression
-    findings   = ""
+    findings = ""
     impression = ""
     for ab in root.findall(".//AbstractText"):
         label = ab.get("Label", "")

@@ -17,6 +17,4 @@ data/NLMCXR_png.tgz
 data/NLMCXR_reports.tgz
 
 # Model artifacts
-checkpoints/
-wandb/
-outputs/
+results/*.pt
