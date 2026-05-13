@@ -6,13 +6,13 @@ Fine-tuning CLIP on chest X-rays with clinically-aware InfoNCE loss functions to
 
 ## Overview
 
-This project investigates whether modifying the contrastive loss function to account for semantic similarity between radiology reports improves image-text retrieval on the IU X-Ray dataset. We implement and compare three training objectives:
+This project investigates whether modifying the contrastive loss function to account for semantic similarity between radiology reports improves image-text retrieval on the IU X-Ray dataset. I implemented and compare three training objectives:
 
 - **Baseline**: Standard InfoNCE (fine-tuned CLIP)
 - **Masked InfoNCE**: Suppresses semantically similar pairs from the softmax denominator using MeSH label Jaccard similarity
 - **Soft Target InfoNCE**: Reweights negatives using MeSH similarity as a soft label distribution
 
-We evaluate using both standard Recall@K (exact-match) and a proposed **Semantic Recall@K** metric that accounts for clinical label overlap.
+I evaluated using both standard Recall@K (exact-match) and a proposed **Semantic Recall@K** metric that accounts for clinical label overlap.
 
 ---
 
